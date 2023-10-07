@@ -2,10 +2,12 @@ import Spinaci from '../assets/pizzas/spinaci.jpg';
 
 const Pizza = () => {
   return (
-    <>
-      <h1>Pizza Spinaci</h1>
-      <img src={Spinaci} alt="Spinaci Pizza" />
-    </>
+    <div className="pizzas">
+      <div className="pizza">
+        <img src={Spinaci} alt="Spinaci Pizza" />
+        <h3>Pizza Spinaci</h3>
+      </div>
+    </div>
   );
 };
 
