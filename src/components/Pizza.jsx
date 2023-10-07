@@ -1,17 +1,16 @@
 import '../index.css';
 
-const Pizza = ({ name, ingredients, photoName, price }) => {
+const Pizza = (props) => {
+  const { name, ingredients, photoName, price } = props.pizzaObj;
   return (
-    <div className="pizzas">
-      <div className="pizza">
-        <img src={photoName} alt={name} />
-        <div>
-          <h3>{name}</h3>
-          <p>{ingredients}</p>
-          <span>{price}</span>
-        </div>
+    <li className="pizza">
+      <img src={photoName} alt={name} />
+      <div>
+        <h3>{name}</h3>
+        <p>{ingredients}</p>
+        <span>{price}</span>
       </div>
-    </div>
+    </li>
   );
 };
 
